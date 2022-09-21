@@ -1,0 +1,66 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    color: rgba(22, 28, 45, 0.7);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.heading h6 {
+    font-family: 'Pacifico', cursive;
+    color: #ff6600;
+    font-size: 1.25rem;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    color: #232121;
+}
+
+
+/* ABOUT US */
+
+.aboutUs__text p {
+    font-size: 1.09375rem;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 640px) {
+    .heading h2 {
+        font-size: 1.875rem;
+        line-height: 1.25;
+    }
+
+    .heading h6 {
+        font-size: 1rem;
+    }
+
+    .aboutUs__text p {
+        font-size: 1.0625rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen  and (max-width: 1024px) {
+    .heading h2 {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+}
+
+
