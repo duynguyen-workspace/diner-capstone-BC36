@@ -1,4 +1,4 @@
-* GLOBAL */
+/* GLOBAL */
 
 * {
     margin: 0;
@@ -24,12 +24,62 @@ body, html {
     color: #232121;
 }
 
+/* BOOKING */
 
-/* ABOUT US */
-
-.aboutUs__content p {
-    font-size: 1.09375rem;
+.booking {
+    background: #ff6600;
 }
+
+.booking__banner {
+    position: relative;
+    background: url(../img/img03.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+
+.booking__content {
+    padding: 35px 50px 0;
+}
+
+.booking__content .heading h6 {
+    color: #fff;
+}
+
+.booking__content p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #ffdfc9;
+}
+
+
+.booking__item .icon {
+    font-size: 25px;
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #ff6600;
+    border-radius: 5px;
+    margin-bottom: 24px
+}
+
+.booking__item a {
+    color: #232323;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.booking__item p {
+    padding-right: 30px;
+    line-height: 1.75;
+}
+
+
+
 
 
 
@@ -43,11 +93,6 @@ body, html {
 
     .heading h6 {
         font-size: 1rem;
-    }
-
-    .aboutUs__content p {
-        font-size: 1.0625rem;
-        line-height: 1.5;
     }
 }
 
