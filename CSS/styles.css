@@ -35,7 +35,15 @@ body, html {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 1080px) {
+    .heading h2 {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .heading h2 {
         font-size: 1.875rem;
         line-height: 1.25;
@@ -43,17 +51,5 @@ body, html {
 
     .heading h6 {
         font-size: 1rem;
-    }
-
-    .aboutUs__content p {
-        font-size: 1.0625rem;
-        line-height: 1.5;
-    }
-}
-
-@media screen  and (max-width: 1024px) {
-    .heading h2 {
-        font-size: 2rem;
-        line-height: 1.25;
     }
 }
