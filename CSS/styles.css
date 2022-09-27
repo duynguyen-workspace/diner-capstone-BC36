@@ -33,20 +33,38 @@ body, html {
 .statistics {
     background: url(../img/img10.jpg) center;
     background-size: cover;
-    min-height: 400px;
+    min-height: 500px;
+    position: relative;
 }
 
+.statistics::after {
+    content: "";
+    background: rgb(0 0 0 / 30%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 0;
+}
 
+.statistics__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
 
 .statistics__motto h2 {
-    font-size: 50px;
+    font-size: 2.875rem;
     color: #fff;
+    font-weight: 600;
 }
 
-
-.button a {
-    background-color: blue;
-    padding: 20px 50px;
+.statistics__button a {
+    padding: 15px 40px;
     margin: 5px;
     text-decoration: none;
     color: white;
@@ -54,6 +72,76 @@ body, html {
     border-radius: 5px;
 }
 
+.statistics__button:first-of-type a {
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all .75s;
+}
+
+.statistics__button:first-of-type a:hover {
+    color: #ff6600;
+    background-color: #fff;
+}
+
+.statistics__button:last-of-type a {
+    background: #ff6600;
+    color: white;
+    opacity: 1;
+    border: 2px solid transparent;
+    transition: all .75s;
+}
+
+.statistics__button:last-of-type a:hover {
+    opacity: 0.8;
+}
+
+.statistics__content {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1;
+    padding: 0 0 50px; /*temporary*/
+}
+
+.statistics__item {
+    background: #fff;
+    box-shadow: 1px 1px 5px 0px rgb(1 1 1 / 5%);
+    padding: 40px 0;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: all .5s;
+}
+
+.statistics__item:hover {
+    box-shadow: 0px 2px 4px rgb(46 41 51 / 8%), 0px 5px 10px rgb(71 63 79 / 16%);
+    transform: translateY(0);
+}
+
+
+.statistics__icon i {
+    font-size: 25px;
+    /* padding: 20px 40px; */
+    background: #ff6600;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.statistics__text h3 {
+    font-size: 40px;
+    color: #000;
+}
+
+.statistics__text span {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
 
 
 
