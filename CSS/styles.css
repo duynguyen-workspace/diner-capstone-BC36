@@ -29,6 +29,30 @@ body, html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* STATISTICS */
+.statistics {
+    background: url(../img/img10.jpg) center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+
+
+.statistics__motto h2 {
+    font-size: 50px;
+    color: #fff;
+}
+
+
+.button a {
+    background-color: blue;
+    padding: 20px 50px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
 
 
 
