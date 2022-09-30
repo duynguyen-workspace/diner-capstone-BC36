@@ -72,36 +72,57 @@ header .header__logo {
     height: 45px;
 }
 
-.header__open-btn i {
-    font-size: 30px;
+#menu-open {
+    font-size: 35px;
     color: white;
+    background: transparent;
 }
 
-#navbarItems {
+.overlay {
     height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
+    transform: scale(0.8);
     background: rgb(6 3 0 / 77%);
+    opacity: 0;
+    transition: all .3s ease;
 }
 
-#navbarItems .header__nav-list {
-    width: 100%;
+.overlay-open {
+    opacity: 1;
+    transform: scale(1);
+}
+
+nav.header__menu ul {
+    list-style: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.header__close-btn {
+nav.header__menu ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2.25;
+}
+
+#menu-close {
     position: absolute;
     top: 90px;
     right: 60px;
-    background-color: orange;
-    width: 50px;
-    height: 50px;
+    background-color: #ff6600;
+    width: 44px;
+    height: 45px;
     color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
 }
 
 

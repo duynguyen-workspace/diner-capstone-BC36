@@ -55,23 +55,26 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
               <i class="fa fa-search search__icon"></i>
           </form>
+          <button id="menu-open">
+            <i class="fa fa-bars"></i>
+          </button>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbarItems">
-          <nav class="header__nav-list">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>              
+        <div class="overlay" id="navbarItems">
+          <button class="header__close-btn" id="menu-close">
+            <i class="fa fa-times"></i>
+          </button>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">404</a></li>
+              <li><a href="#">Landing Page</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Shot code</a></li>
+              <li><a href="#">Email</a></li>
             </ul>
           </nav>
         </div>
@@ -95,5 +98,7 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+    <script src="/JS/button-toggler.js"></script>
   </body>
 </html>
