@@ -6,3 +6,7 @@ document.getElementById("menu-open").onclick = function () {
 document.getElementById("menu-close").onclick = function () {
     document.getElementById("navbarItems").classList.remove("overlay-open");
 };
+//Dark mode toggler
+document.getElementById("darkModeToggler").onclick = function () {
+    document.getElementById("myHeader").classList.toggle("dark");
+};

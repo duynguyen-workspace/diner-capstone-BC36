@@ -45,16 +45,20 @@
 
   <body>
     <!-- HEADER -->
-    <header class="subheading">
+    <header class="subheading" id="myHeader">
       <nav class="navbar header__navbar">
         <div class="header__navbar-left">
           <a class="navbar-brand header__logo" href="#">Diner</a>
         </div>
-        <div class="header__navbar-right d-flex">
+        <div class="header__navbar-right d-flex align-items-center">
           <form class="form-inline header__search-bar">
             <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
               <i class="fa fa-search search__icon"></i>
           </form>
+          <button id="darkModeToggler">
+            <i class="fa fa-moon"></i>
+            <i class="fa fa-sun"></i>
+          </button>
           <button id="menu-open">
             <i class="fa fa-bars"></i>
           </button>

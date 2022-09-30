@@ -125,6 +125,39 @@ nav.header__menu ul a {
     font-size: 1.25rem;
 }
 
+button#darkModeToggler {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    background: transparent;
+    color: white;
+}
+
+#darkModeToggler .fa-sun{
+    display: none;
+}
+
+#darkModeToggler .fa-moon {
+    display: block;
+  }
+
+
+
+/* DARK MODE */
+
+.dark .header__search-bar input, .dark .header__search-bar i {
+    background-color: #232121;
+    color: white;
+}
+
+.dark #darkModeToggler .fa-sun {
+    display: block;
+    color: aliceblue;
+  }
+  
+  .dark #darkModeToggler .fa-moon {
+    display: none;
+  }
 
 
 
@@ -154,6 +187,4 @@ nav.header__menu ul a {
         font-size: 1rem;
     }
 }
-
-/* KEYFRAME */
 
