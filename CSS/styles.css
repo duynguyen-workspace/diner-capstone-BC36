@@ -34,7 +34,7 @@ body, html {
 
 .header__navbar {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     background: transparent;
@@ -95,6 +95,7 @@ header .header__logo {
     background: rgb(6 3 0 / 77%);
     opacity: 0;
     transition: all .3s ease;
+    z-index: -1;
 }
 
 .overlay-open {
@@ -182,6 +183,7 @@ button#darkModeToggler {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    left: 35px;
     color: white;
     width: 45%;
     z-index: 1;
