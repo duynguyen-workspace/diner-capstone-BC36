@@ -76,13 +76,32 @@ body, html {
     transition: all .5s;
 }
 
+.services__item-body p {
+    font-size: 1.125rem;
+}
+
+/* DARK MODE */
+.dark {
+    background: #232121;
+}
+
+.dark .services__icon i {
+    background: #282828;
+}
+
+.dark .services__text p, .dark .services__item-body p {
+    color: #c2d0da;
+}
+
+.dark .services__text h3 {
+    color: #eee;
+}
+
 .services__text h3:hover {
     color: #ff6600;
 }
 
-.services__item-body p {
-    font-size: 1.125rem;
-}
+
 
 
 
