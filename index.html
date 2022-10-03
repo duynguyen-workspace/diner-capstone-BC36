@@ -43,70 +43,67 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
 
-  <body>
+  <body id="myHTML">
     <!-- HEADER -->
-    <header class="subheading" id="myHeader">
-      <nav class="navbar header__navbar">
-        <div class="header__navbar-left">
-          <a class="navbar-brand header__logo" href="#">Diner</a>
-        </div>
-        <div class="header__navbar-right d-flex align-items-center">
-          <form class="form-inline header__search-bar">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search here..."
-              aria-label="Search"
-            />
-            <i class="fa fa-search search__icon"></i>
-          </form>
-          <button id="darkModeToggler">
-            <i class="fa fa-moon"></i>
-            <i class="fa fa-sun"></i>
-          </button>
-          <button id="menu-open">
-            <i class="fa fa-bars"></i>
-          </button>
+    <header>
+      <div class="container">
+        <div class="navbar header__navbar">
+          <div class="header__navbar-left">
+            <a class="navbar-brand header__logo subheading" href="#">Diner</a>
+          </div>
+          <div class="header__navbar-right d-flex align-items-center">
+            <form class="form-inline header__search-bar">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search here..."
+                aria-label="Search"
+              />
+              <i class="fa fa-search search__icon"></i>
+            </form>
+            <button id="darkModeToggler">
+              <i class="fa fa-moon"></i>
+              <i class="fa fa-sun"></i>
+            </button>
+            <button id="menu-open">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="overlay" id="navbarItems">
+            <button class="header__close-btn" id="menu-close">
+              <i class="fa fa-times"></i>
+            </button>
+            <nav class="header__menu subheading">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">404</a></li>
+                <li><a href="#">Landing Page</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shot code</a></li>
+                <li><a href="#">Email</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
-        <div class="overlay" id="navbarItems">
-          <button class="header__close-btn" id="menu-close">
-            <i class="fa fa-times"></i>
-          </button>
-          <nav class="header__menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">404</a></li>
-              <li><a href="#">Landing Page</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Shot code</a></li>
-              <li><a href="#">Email</a></li>
-            </ul>
-          </nav>
-        </div>
-      </nav>
-    </header>
-    <!-- CAROUSEl -->
-    <section class="carousel">
-      <div class="container-xl">
         <div class="carousel__content">
           <h1>The Only Thing We Love More Than Food Is You!</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
-            sit.Ea ipsum sed consequuntur illum facere.
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.Ea ipsum sed consequuntur illum facere.
           </p>
-          <a class="carousel__button" href="#">
+          <a class="carousel__button subheading" href="#">
             Read More
             <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span
           ></a>
         </div>
       </div>
-    </section>
+    </header>
 
-    
     <!-- BS4 JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

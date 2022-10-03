@@ -8,5 +8,5 @@ document.getElementById("menu-close").onclick = function () {
 };
 //Dark mode toggler
 document.getElementById("darkModeToggler").onclick = function () {
-    document.getElementById("myHeader").classList.toggle("dark");
+    document.getElementById("myHTML").classList.toggle("dark");
 };
