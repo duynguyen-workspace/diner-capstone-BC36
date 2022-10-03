@@ -31,6 +31,20 @@ body, html {
     font-size: 1.09375rem;
 }
 
+/* DARK MODE */
+
+.dark {
+    background:#232121;
+}
+
+.dark .aboutUs .heading h2 {
+    color: #eee;
+}
+
+.dark .aboutUs__content p {
+    color: #c2d0da;
+}
+
 
 
 /* MEDIA QUERIES */
