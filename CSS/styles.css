@@ -31,11 +31,12 @@ body, html {
 
 /* HEADER */
 
-header {
-  min-height: 700px;
+header.About {
+  min-height: 350px;
   width: 100vw;
-  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/img02.jpg);
-  background-size: cover;
+  background-image: linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(../img/img10.jpg);
+  background-size: contain;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -160,37 +161,34 @@ button#darkModeToggler {
 
 /* CAROUSEL */
 
-.carousel__content {
-  color: white;
-  max-width: 600px;
+.carouselAb {
   margin-top: 100px;
 }
 
-.carousel__content h1 {
-  font-size: 3.4375rem;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-.carousel__content p {
-  margin-bottom: 40px;
-}
-
-.carousel__button {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
+.carouselAb ul {
+  font-size: 17px;
   font-weight: 700;
-  border: 2px solid white;
-  padding: 15px 40px;
-  border-radius: 5px;
-  transition: all .5s;
+  background: none;
 }
 
-.carousel__button:hover {
-  text-decoration: none;
-  background-color: white;
+.carouselAb .breadcrumb-item:first-of-type a {
   color:#ff6600;
 }
+
+.carouselAb .breadcrumb-item:first-of-type a:hover {
+  text-decoration: none;
+}
+
+.carouselAb .breadcrumb-item:nth-of-type(2) {
+  color: white;
+}
+
+.carouselAb .breadcrumb-item:nth-of-type(2)::before {
+  content: "";
+}
+
+
+
 
 /* DARK MODE */
 
