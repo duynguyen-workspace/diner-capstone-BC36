@@ -218,11 +218,14 @@ button#darkModeToggler {
   color: #232121;
   font-size: 2.5rem;
   font-weight: 600;
-  margin: -35px 0 30px 0;
 }
 
 .aboutAb__Text p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.aboutAb__Text .button a {
+  padding: 15px 45px;
 }
 
 .aboutAb__Text p:nth-of-type(2) {
@@ -232,8 +235,9 @@ button#darkModeToggler {
 .aboutAb__features {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
+  padding-top: 70px
 }
 
 .aboutAb__features h3 {
@@ -243,11 +247,13 @@ button#darkModeToggler {
 }
 
 .aboutAb__features a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #ff6600;
   font-weight: 600;
   cursor: pointer;
   transition: all .3s;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .aboutAb__features a:hover {
@@ -256,7 +262,7 @@ button#darkModeToggler {
 }
 
 .aboutAb__features p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 
@@ -281,6 +287,14 @@ button#darkModeToggler {
   display: none;
 }
 
+.dark .aboutAb__Text h3 {
+  color: white;
+}
+
+.dark .aboutAb__Text p, .dark .aboutAb__features h3, .dark .aboutAb__features p{
+  color: aliceblue;
+}
+
 
 
 
@@ -293,12 +307,33 @@ button#darkModeToggler {
         font-size: 2rem;
         line-height: 1.25;
     }
+
+    .aboutAb__Text h3 {
+      font-size: 1.875rem;
+    }
+
+    .aboutAb__features h3 {
+      font-size: 2rem;
+    }
 }
 
+@media  screen and (max-width: 992px) {
+  .aboutAb__features {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
 
-/* @media  screen and (max-width: 800px) {
+@media  screen and (max-width: 800px) {
+  .aboutAb__features {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 
-} */
+  .aboutAb__features a {
+    margin-top: 30px;
+  }
+}
 
 @media screen and (max-width: 600px) {
     .heading h2 {
@@ -309,6 +344,38 @@ button#darkModeToggler {
     .heading h6 {
         font-size: 1rem;
     }
+
+    .aboutAb__Text h3 {
+      font-size: 1.75rem;
+    }
+
+    .aboutAb__Text p {
+      font-size: 1rem;
+    }
+
+    .aboutAb__features p {
+      font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+  .aboutAb__features a {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutAb__Text h3 {
+    font-size: 1.5rem;
+  }
+
+  .aboutAb__Text .button a {
+    padding: 15px;
+  }
+
+  .aboutAb__features h3 {
+    font-size: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px) {
