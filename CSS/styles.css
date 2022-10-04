@@ -31,7 +31,7 @@ body, html {
 
 /* HEADER */
 
-header.About {
+header.ab {
   min-height: 350px;
   width: 100vw;
   background-image: linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)), url(../img/img10.jpg);

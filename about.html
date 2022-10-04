@@ -44,66 +44,81 @@
   </head>
 
   <body id="myHTML">
-    <header class="About">
-        <div class="container">
-          <div class="navbar header__navbar">
-            <div class="header__navbar-left">
-              <a class="navbar-brand header__logo subheading" href="#">Diner</a>
-            </div>
-            <div class="header__navbar-right d-flex align-items-center">
-              <form class="form-inline header__search-bar">
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search here..."
-                  aria-label="Search"
-                />
-                <i class="fa fa-search search__icon"></i>
-              </form>
-              <button id="darkModeToggler">
-                <i class="fa fa-moon"></i>
-                <i class="fa fa-sun"></i>
-              </button>
-              <button id="menu-open">
-                <i class="fa fa-bars"></i>
-              </button>
-            </div>
-  
-            <div class="overlay" id="navbarItems">
-              <button class="header__close-btn" id="menu-close">
-                <i class="fa fa-times"></i>
-              </button>
-              <nav class="header__menu subheading">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Service</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">404</a></li>
-                  <li><a href="#">Landing Page</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Shot code</a></li>
-                  <li><a href="#">Email</a></li>
-                </ul>
-              </nav>
-            </div>
+    <header class="ab">
+      <div class="container">
+        <div class="navbar header__navbar">
+          <div class="header__navbar-left">
+            <a class="navbar-brand header__logo subheading" href="#">Diner</a>
           </div>
-  
-            <div class="carouselAb" aria-label="breadcrumb">
-                <ul class="breadcrumb justify-content-center">
-                  <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>
-                    About Us</li>
-                </ul>
-              </div>
+          <div class="header__navbar-right d-flex align-items-center">
+            <form class="form-inline header__search-bar">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search here..."
+                aria-label="Search"
+              />
+              <i class="fa fa-search search__icon"></i>
+            </form>
+            <button id="darkModeToggler">
+              <i class="fa fa-moon"></i>
+              <i class="fa fa-sun"></i>
+            </button>
+            <button id="menu-open">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="overlay" id="navbarItems">
+            <button class="header__close-btn" id="menu-close">
+              <i class="fa fa-times"></i>
+            </button>
+            <nav class="header__menu subheading">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">404</a></li>
+                <li><a href="#">Landing Page</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shot code</a></li>
+                <li><a href="#">Email</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </header>
-  
 
+        <div class="carouselAb" aria-label="breadcrumb">
+          <ul class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>
+              About Us
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-
-
-
+    <section class="aboutAb py-5">
+        <div class="container">
+            <div class="heading">
+                <h6>The Story</h6>
+                <h2>About Us</h2>
+            </div>
+            <div class="aboutAb__content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./img/img02.jpg" class="img-fluid" alt="About image">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/img02.jpg" class="img-fluid" alt="About image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- BS4 JS -->
     <script
@@ -117,9 +132,7 @@
       crossorigin="anonymous"
     ></script>
 
-
     <!-- BUTTON TOGGLER -->
     <script src="./JS/button-toggler.js"></script>
   </body>
-  
 </html>
