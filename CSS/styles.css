@@ -10,6 +10,7 @@ body, html {
     color: rgba(22, 28, 45, 0.7);
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .heading h6 {
@@ -228,6 +229,35 @@ button#darkModeToggler {
   margin-bottom: 40px;
 }
 
+.aboutAb__features {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.aboutAb__features h3 {
+  font-size: 2.5rem;
+  color: #232323;
+  font-weight: 600;
+}
+
+.aboutAb__features a {
+  font-size: 1.5rem;
+  color: #ff6600;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.aboutAb__features a:hover {
+  text-decoration: none;
+  color: #ffc600;
+}
+
+.aboutAb__features p {
+  font-size: 1.25rem;
+}
 
 
 
