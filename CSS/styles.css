@@ -223,10 +223,60 @@ button#darkModeToggler {
   content: "";
 }
 
-/* OFFER */
+/* ABOUT US */
 
-.offer__content p {
+.aboutUs__content p {
   font-size: 1.09375rem;
+}
+
+/* Services */
+
+.services__item {
+  color: rgba(22, 28, 45, 0.7);
+  border-radius: 10px;
+  border: 1px solid rgb(128 128 128 / 10%);
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+  transition: all .5s;
+  padding: 40px;
+}
+
+.services__item:hover {
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 8%);
+}
+
+
+.services__icon i {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: #ff6600;
+  margin-right: 15px;
+  transition: all .5s;
+}
+
+.services__item:hover .services__icon i {
+  color: white;
+  background: #ff6600;
+
+}
+
+.services__text p {
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+}
+
+.services__text h3 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  transition: all .5s;
+}
+
+.services__item-body p {
+  font-size: 1.125rem;
 }
 
 /* DARK MODE */
@@ -254,7 +304,7 @@ button#darkModeToggler {
   color: #eee;
 }
 
-.dark .offer__content p {
+.dark .aboutUs__content p {
   color: #c2d0da;
 }
 
