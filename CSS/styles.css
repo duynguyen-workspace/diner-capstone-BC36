@@ -223,132 +223,6 @@ button#darkModeToggler {
   content: "";
 }
 
-/* ABOUT US (ab page) */
-
-.aboutAb img {
-  border-radius: 5px;
-}
-
-.aboutAb__Text h3 {
-  color: #232121;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.aboutAb__Text p {
-  font-size: 1.125rem;
-}
-
-.aboutAb__Text .button a {
-  padding: 15px 45px;
-}
-
-.aboutAb__Text p:nth-of-type(2) {
-  margin-bottom: 40px;
-}
-
-.aboutAb__features {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 30px;
-  align-items: center;
-  padding-top: 70px;
-}
-
-.aboutAb__features h3 {
-  font-size: 2.5rem;
-  color: #232323;
-  font-weight: 600;
-}
-
-.aboutAb__features a {
-  font-size: 1.25rem;
-  color: #ff6600;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.aboutAb__features a:hover {
-  text-decoration: none;
-  color: #ffc600;
-}
-
-.aboutAb__features p {
-  font-size: 1.125rem;
-}
-
-/* SKILLS */
-
-.skills {
-  background-color: #f7f7f7;
-}
-
-.skills__content {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 30px;
-}
-
-.skills__photo img {
-  border-radius: 5px;
-}
-
-.skills__stats .heading p {
-  font-size: 1.1rem;
-}
-
-.skills__item {
-  margin-bottom: 25px;
-}
-
-.skills__item h6 {
-  color: #232323;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.skills__stat {
-  background: rgba(22, 28, 45, 0.7);
-  height: 0.35rem;
-}
-
-.skills__stat .progress-bar {
-  background: #ff6600;
-}
-
-/* TEAM */
-figure.team__item img {
-    border-radius: 5px;
-}
-
-.team__item figcaption h3 {
-    font-size: 2rem;
-}
-
-.team__item figcaption a {
-    margin-top: 30px;
-    font-size: 1.6rem;
-    color: #232323;
-    font-weight: 700;
-    display: block;
-    transition: all .3s;
-}
-
-.team__item figcaption:hover a {
-    text-decoration: none !important;
-    color: #f60 !important;
-}
-
-.team__item figcaption span {
-    font-size: 1.125rem;
-    color: rgba(22, 28, 45, 0.7);
-    font-weight: 400;
-}
-
-
 /* DARK MODE */
 
 .dark {
@@ -370,20 +244,9 @@ figure.team__item img {
   display: none;
 }
 
-.dark .aboutAb__Text h3,
-.dark .heading h2, .dark .skills__item h6, .dark .team__item figcaption a {
+.dark .heading h2 {
   color: #eee;
 }
-
-.dark .aboutAb__Text p,
-.dark .aboutAb__features h3,
-.dark .aboutAb__features p, .dark .skills__stats .heading p, .dark .team__item figcaption span {
-  color: #c2d0da;
-}
-
-.dark .skills {
-    background-color: #282828;
-  }
 
 /* MEDIA QUERIES */
 
@@ -391,61 +254,6 @@ figure.team__item img {
   .heading h2 {
     font-size: 2rem;
     line-height: 1.25;
-  }
-
-  .aboutAb__Text h3 {
-    font-size: 1.875rem;
-  }
-
-  .aboutAb__features h3 {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .aboutAb__features {
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
-
-  .team__item:last-of-type {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (max-width: 991.5px) {
-  .skills__content {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .skills__stats {
-    grid-column: 1 / span 2;
-  }
-
-  .skills__photo img:first-of-type {
-    grid-column: 1 / span 1;
-  }
-
-  .skills__photo img:last-of-type {
-    grid-column: 2 / span 1;
-  }
-}
-
-@media screen and (max-width: 990px) {
-    .team__item figcaption a {
-        margin-top: 15px;
-        font-size: 1.125rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-  .aboutAb__features {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .aboutAb__features a {
-    margin-top: 30px;
   }
 }
 
@@ -462,49 +270,11 @@ figure.team__item img {
   .header__search-bar {
     display: none;
   }
-
-  .aboutAb__Text h3 {
-    font-size: 1.75rem;
-  }
-
-  .aboutAb__Text p {
-    font-size: 1rem;
-  }
-
-  .aboutAb__features p {
-    font-size: 1rem;
-  }
-
-  .skills__stats .heading p {
-    font-size: 1rem;
-  }
-
-  .team__item figcaption span {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .aboutAb__features a {
-    margin-top: 15px;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .heading h2 {
     font-size: 1.5rem;
-  }
-
-  .aboutAb__Text h3 {
-    font-size: 1.5rem;
-  }
-
-  .aboutAb__Text .button a {
-    padding: 15px;
-  }
-
-  .aboutAb__features h3 {
-    font-size: 1.75rem;
   }
 }
 
