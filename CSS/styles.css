@@ -197,29 +197,29 @@ button#darkModeToggler {
 
 /* CAROUSEL */
 
-.carouselAb {
+.carouselSec {
   margin-top: 100px;
 }
 
-.carouselAb ul {
+.carouselSec ul {
   font-size: 17px;
   font-weight: 700;
   background: none;
 }
 
-.carouselAb .breadcrumb-item:first-of-type a {
+.carouselSec .breadcrumb-item:first-of-type a {
   color: #ff6600;
 }
 
-.carouselAb .breadcrumb-item:first-of-type a:hover {
+.carouselSec .breadcrumb-item:first-of-type a:hover {
   text-decoration: none;
 }
 
-.carouselAb .breadcrumb-item:nth-of-type(2) {
+.carouselSec .breadcrumb-item:nth-of-type(2) {
   color: white;
 }
 
-.carouselAb .breadcrumb-item:nth-of-type(2)::before {
+.carouselSec .breadcrumb-item:nth-of-type(2)::before {
   content: "";
 }
 
