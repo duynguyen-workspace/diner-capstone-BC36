@@ -98,7 +98,9 @@ header .header__logo {
 }
 
 .header__search-bar input:focus {
-  border-color: transparent;
+  border-color: transparent !important;
+  outline: none !important;
+  box-shadow: none;
 }
 
 .header__search-bar i {
@@ -111,6 +113,7 @@ header .header__logo {
   color: gray;
   padding: 14px 10px;
   height: 45px;
+  cursor: pointer;
 }
 
 #menu-open {
