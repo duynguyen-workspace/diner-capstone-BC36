@@ -229,21 +229,20 @@ button#darkModeToggler {
   font-size: 1.09375rem;
 }
 
-/* Services */
+/* SERVICES */
 
 .services__item {
   color: rgba(22, 28, 45, 0.7);
   border-radius: 10px;
   border: 1px solid rgb(128 128 128 / 25%);
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
-  transition: all .5s;
+  transition: all 0.5s;
   padding: 40px;
 }
 
 .services__item:hover {
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 8%);
 }
-
 
 .services__icon i {
   width: 70px;
@@ -254,13 +253,12 @@ button#darkModeToggler {
   border-radius: 10px;
   color: #ff6600;
   margin-right: 15px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .services__item:hover .services__icon i {
   color: white;
   background: #ff6600;
-
 }
 
 .services__text p {
@@ -272,7 +270,7 @@ button#darkModeToggler {
   font-size: 1.5rem;
   cursor: pointer;
   color: black;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .services__text h3:hover {
@@ -281,6 +279,63 @@ button#darkModeToggler {
 
 .services__item-body p {
   font-size: 1.125rem;
+}
+
+/* MOTTO */
+.motto {
+  background: url(../img/img10.jpg) center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.motto::before {
+  content: "";
+  background: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.motto__content {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.motto__content h2 {
+  margin-top: 50px;
+  font-size: 2.875rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.motto__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.motto .button:first-of-type {
+  margin-right: 15px;
+  transition: all 0.5s;
+}
+
+.motto .button:first-of-type a {
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: all 0.75s;
+}
+
+.motto .button:first-of-type a:hover {
+  color: #ff6600;
+  background-color: #fff;
 }
 
 /* DARK MODE */
@@ -304,11 +359,14 @@ button#darkModeToggler {
   display: none;
 }
 
-.dark .heading h2, .dark .services__text h3 {
+.dark .heading h2,
+.dark .services__text h3 {
   color: #eee;
 }
 
-.dark .aboutUs__content p, .dark .services__text p, .dark .services__item-body p {
+.dark .aboutUs__content p,
+.dark .services__text p,
+.dark .services__item-body p {
   color: #c2d0da;
 }
 
@@ -326,6 +384,22 @@ button#darkModeToggler {
 
   .services__text h3 {
     font-size: 1.25rem;
+  }
+
+  .motto__content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .motto .button:first-of-type {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .motto__content h2 {
+    font-size: 2.25rem;
   }
 }
 
@@ -347,9 +421,20 @@ button#darkModeToggler {
     font-size: 1rem;
   }
 
-  .services__text p, .services__item-body p {
+  .services__text p,
+  .services__item-body p {
     font-size: 1rem;
+  }
 }
+
+@media screen and (max-width: 497px) {
+  .motto__buttons a {
+    padding: 15px 20px;
+  }
+
+  .motto__content h2 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -362,6 +447,21 @@ button#darkModeToggler {
   .services__item {
     padding: 30px;
   }
+
+  .motto__content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 347px) {
+  .motto__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .motto .button:first-of-type a {
+    margin-bottom: 5px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -369,6 +469,3 @@ button#darkModeToggler {
     max-width: 1200px;
   }
 }
-
-
-
