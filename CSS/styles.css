@@ -155,6 +155,11 @@ nav.header__menu ul a {
   font-size: 20px;
   font-weight: 600;
   line-height: 2.25;
+  transition: all .3s;
+}
+
+nav.header__menu ul a:hover {
+    color: #ff6600;
 }
 
 #menu-close {
@@ -273,6 +278,7 @@ button#darkModeToggler {
 }
 
 /* SKILLS */
+
 .skills {
   background-color: #f7f7f7;
 }
@@ -310,6 +316,36 @@ button#darkModeToggler {
   background: #ff6600;
 }
 
+/* TEAM */
+figure.team__item img {
+    border-radius: 5px;
+}
+
+.team__item figcaption h3 {
+    font-size: 2rem;
+}
+
+.team__item figcaption a {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    color: #232323;
+    font-weight: 700;
+    display: block;
+    transition: all .3s;
+}
+
+.team__item figcaption:hover a {
+    text-decoration: none !important;
+    color: #f60 !important;
+}
+
+.team__item figcaption span {
+    font-size: 1.125rem;
+    color: rgba(22, 28, 45, 0.7);
+    font-weight: 400;
+}
+
+
 /* DARK MODE */
 
 .dark {
@@ -332,13 +368,13 @@ button#darkModeToggler {
 }
 
 .dark .aboutAb__Text h3,
-.dark .heading h2, .dark .skills__item h6 {
+.dark .heading h2, .dark .skills__item h6, .dark .team__item figcaption a {
   color: #eee;
 }
 
 .dark .aboutAb__Text p,
 .dark .aboutAb__features h3,
-.dark .aboutAb__features p, .dark .skills__stats .heading p {
+.dark .aboutAb__features p, .dark .skills__stats .heading p, .dark .team__item figcaption span {
   color: #c2d0da;
 }
 
@@ -368,6 +404,10 @@ button#darkModeToggler {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
+
+  .team__item:last-of-type {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 991.5px) {
@@ -386,6 +426,13 @@ button#darkModeToggler {
   .skills__photo img:last-of-type {
     grid-column: 2 / span 1;
   }
+}
+
+@media screen and (max-width: 990px) {
+    .team__item figcaption a {
+        margin-top: 15px;
+        font-size: 1.125rem;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -426,6 +473,10 @@ button#darkModeToggler {
   }
 
   .skills__stats .heading p {
+    font-size: 1rem;
+  }
+
+  .team__item figcaption span {
     font-size: 1rem;
   }
 }
