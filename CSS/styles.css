@@ -52,14 +52,16 @@ body, html {
 }
 
 
-/* STATISTICS */
-.statistics {
+/* MOTTO */
+.motto {
     background: url(../img/img10.jpg) center;
     background-size: cover;
     position: relative;
+    z-index: 1;
+    transition: all .5s;
 }
 
-.statistics::after {
+.motto::before {
     content: "";
     background: rgb(0 0 0 / 60%);
     width: 100%;
@@ -68,95 +70,44 @@ body, html {
     bottom: 0;
     left: 0;
     border-radius: 10px;
-    z-index: 0;
+    z-index: -1;
 }
 
-.statistics__heading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    z-index: 2;
+.motto__content {
+    margin: 0 auto;
+    max-width: 700px;
 }
 
-.statistics__motto {
+.motto__content h2 {
+    margin-top: 50px;
+    font-size: 2.875rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px;
     transition: all .5s;
 }
 
-.statistics__motto h2 {
-    font-size: 2.875rem;
-    color: #fff;
-    font-weight: 600;
-}
-
-.statistics__buttons {
+.motto__buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.statistics .button:first-of-type a {
+.motto .button:first-of-type {
+    margin-right: 15px;
+    transition: all .5s;
+}
+
+.motto .button:first-of-type a {
     background-color: transparent;
     border: 2px solid #fff;
     transition: all .75s;
 }
 
-.statistics .button:first-of-type a:hover {
+.motto .button:first-of-type a:hover {
     color: #ff6600;
     background-color: #fff;
 }
-
-.statistics__content {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    z-index: 1;
-    padding: 0 0 50px; /*temporary*/
-}
-
-.statistics__item {
-    background: #fff;
-    box-shadow: 1px 1px 5px 0px rgb(1 1 1 / 5%);
-    padding: 40px 0;
-    border-radius: 5px;
-    transform: translateY(10px);
-    transition: all .5s;
-}
-
-.statistics__item:hover {
-    box-shadow: 0px 2px 4px rgb(46 41 51 / 8%), 0px 5px 10px rgb(71 63 79 / 16%);
-    transform: translateY(0);
-}
-
-
-.statistics__icon i {
-    font-size: 25px;
-    /* padding: 20px 40px; */
-    background: #ff6600;
-    text-align: center;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50%;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.statistics__text h3 {
-    font-size: 2.5rem;
-    color: #000;
-    transition: all .5s;
-}
-
-.statistics__text span {
-    font-size: 1.125rem;
-    font-weight: 600;
-}
-
-
-
 
 /* MEDIA QUERIES */
 
@@ -166,56 +117,20 @@ body, html {
         line-height: 1.25;
     }
 
-    .statistics__motto h2 {
+    .motto__content h2 {
         font-size: 2.5rem;
-    }
-
-    .statistics__heading {
-        width: 70%;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .statistics__content {
-        top: 100%;
-    }
-
-    .statistics {
-        min-height: 300px;
-    }
-
-    .statistics__heading {
-        transform: translate(-50%, -50%);
-    }
-}
-
-
-@media  screen and (max-width: 800px) {
-    .statistics__heading {
-        width: 80%;
-    }
-}
-
-@media  screen and (max-width: 767.5px) {
-    .statistics__content {
-        width: 80%;
-        padding-top: 25px;
+    .motto .button:first-of-type {
+        margin-right: 0;
     }
 }
 
 @media  screen and (max-width: 736px) {
-    .statistics__motto h2 {
+    .motto__content h2 {
         font-size: 2.25rem;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .statistics__text h3 {
-        font-size: 2rem;
-    }
-
-    .statistics__item {
-        padding: 30px 0;
     }
 }
 
@@ -231,42 +146,35 @@ body, html {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .motto__content h2 {
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 497px) {
-    .statistics__button a {
+    .motto__buttons a {
         padding: 15px 20px;
     }
 
-    .statistics__motto h2 {
+    .motto__content h2 {
         font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 415px) {
-    .statistics__motto h2 {
+    .motto__content h2 {
         font-size: 1.5rem;
     }
 }
 
-@media screen and (max-width: 397px) {
-    .statistics__buttons {
+@media screen and (max-width: 347px) {
+    .motto__buttons {
         flex-direction: column;
-        flex-flow: wrap;
+        align-items: center;
     }
 
-    .statistics__button:first-of-type a {
-        margin-bottom: 5px;;
-    }
-}
-
-
-@media  screen and (min-width: 992px) {
-    .statistics {
-        min-height: 500px;
-    }
-}
-
-@media screen and (min-width: 1080px) {
-    .statistics__heading {
-        width: 55%;
+    .motto .button:first-of-type a {
+        margin-bottom: 5px;
     }
 }
