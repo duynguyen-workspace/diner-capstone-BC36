@@ -275,6 +275,10 @@ button#darkModeToggler {
   transition: all .5s;
 }
 
+.services__text h3:hover {
+  color: #ff6600 !important;
+}
+
 .services__item-body p {
   font-size: 1.125rem;
 }
