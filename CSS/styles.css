@@ -158,11 +158,11 @@ nav.header__menu ul a {
   font-size: 20px;
   font-weight: 600;
   line-height: 2.25;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 nav.header__menu ul a:hover {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 #menu-close {
@@ -197,30 +197,36 @@ button#darkModeToggler {
 
 /* CAROUSEL */
 
-.carouselAb {
+.carouselSec {
   margin-top: 100px;
 }
 
-.carouselAb ul {
+.carouselSec ul {
   font-size: 17px;
   font-weight: 700;
   background: none;
 }
 
-.carouselAb .breadcrumb-item:first-of-type a {
+.carouselSec .breadcrumb-item:first-of-type a {
   color: #ff6600;
 }
 
-.carouselAb .breadcrumb-item:first-of-type a:hover {
+.carouselSec .breadcrumb-item:first-of-type a:hover {
   text-decoration: none;
 }
 
-.carouselAb .breadcrumb-item:nth-of-type(2) {
+.carouselSec .breadcrumb-item:nth-of-type(2) {
   color: white;
 }
 
-.carouselAb .breadcrumb-item:nth-of-type(2)::before {
+.carouselSec .breadcrumb-item:nth-of-type(2)::before {
   content: "";
+}
+
+/* OFFER */
+
+.offer__content p {
+  font-size: 1.09375rem;
 }
 
 /* DARK MODE */
@@ -246,6 +252,10 @@ button#darkModeToggler {
 
 .dark .heading h2 {
   color: #eee;
+}
+
+.dark .offer__content p {
+  color: #c2d0da;
 }
 
 /* MEDIA QUERIES */
