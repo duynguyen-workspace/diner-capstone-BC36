@@ -338,6 +338,33 @@ button#darkModeToggler {
   background-color: #fff;
 }
 
+/* MENU */
+
+.menu__name {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 2px dotted #bbb;
+  font-weight: 600;
+}
+
+.menu__name p {
+  margin: 0;
+  color: #232323;
+  font-size: 1.3rem;
+}
+
+.menu__name span {
+  color: #ff6600;
+  font-size: 1.25rem;
+}
+
+.menu__description p {
+  font-size: 1.125rem;
+  padding-top: 10px;
+  text-align: left;
+}
+
 /* DARK MODE */
 
 .dark {
@@ -457,6 +484,7 @@ button#darkModeToggler {
   .motto__buttons {
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .motto .button:first-of-type a {
