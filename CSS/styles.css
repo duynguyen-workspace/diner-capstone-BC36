@@ -39,6 +39,7 @@ html {
   color: white;
   font-weight: 700;
   border-radius: 5px;
+  display: block;
 }
 
 .orange-btn a {
@@ -387,13 +388,13 @@ button#darkModeToggler {
 }
 
 .dark .heading h2,
-.dark .services__text h3 {
+.dark .services__text h3, .dark .menu__name p {
   color: #eee;
 }
 
 .dark .aboutUs__content p,
 .dark .services__text p,
-.dark .services__item-body p {
+.dark .services__item-body p, .dark .menu__description p {
   color: #c2d0da;
 }
 
