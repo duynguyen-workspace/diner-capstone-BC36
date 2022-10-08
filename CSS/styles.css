@@ -29,7 +29,77 @@ body, html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* VIDEO */
+.thumbnail {
+  background: url(../img/img03.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+}
 
+.thumbnail::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 33, 33, 0.5);
+}
+
+.video .open-popup-link {
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ripple 1s linear infinite;;
+  z-index: 2;
+  text-align: center;
+  transition: all .5s;
+}
+
+.video .open-popup-link:hover {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6600;
+}
+
+.video .open-popup-link i {
+  color: #ff6600;
+  line-height: 80px;
+  font-size: 1.5rem;
+  transition: all .5s;
+}
+
+.video .open-popup-link:hover i {
+  color: #fff;
+  line-height: 100px;
+  font-size: 1.75rem;
+}
+
+.white-popup {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.white-popup iframe {
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 10px;
+}
+
+.mfp-content .white-popup .mfp-close {
+  color: #fff;
+  top: -40px;
+}
 
 
 
@@ -44,9 +114,17 @@ body, html {
 }
 
 
-/* @media  screen and (max-width: 800px) {
+@media  screen and (max-width: 900px) {
+  .thumbnail {
+    min-height: 400px;
+  }
+}
 
-} */
+@media  screen and (max-width: 640px) {
+  .thumbnail {
+    min-height: 350px;
+  }
+}
 
 @media screen and (max-width: 600px) {
     .heading h2 {
@@ -57,4 +135,16 @@ body, html {
     .heading h6 {
         font-size: 1rem;
     }
+}
+
+/* ANIMATION */
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
 }
