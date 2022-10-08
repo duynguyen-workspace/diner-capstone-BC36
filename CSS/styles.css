@@ -30,6 +30,13 @@ body, html {
 }
 
 /* TESTIMONIAL */
+.testimonial .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: #ff6600;
+  border-radius: 50%;
+}
+
 .testimonial__thumbnail {
   margin-bottom: 15px;
   display: block;
