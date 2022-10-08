@@ -30,6 +30,11 @@ body, html {
 }
 
 /* TESTIMONIAL */
+
+.testimonial .carousel-indicators {
+  bottom: -50px;
+}
+
 .testimonial .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -38,15 +43,16 @@ body, html {
 }
 
 .testimonial__thumbnail {
-  margin-bottom: 15px;
   display: block;
-}
-
-.testimonial__thumbnail img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-} 
+  margin: 0 auto 15px;
+}
+
+.testimonial__thumbnail img {
+  width: 100%;
+}
 
 .testimonial__item blockquote q::before {
   font-size: 50px;
@@ -109,4 +115,8 @@ body, html {
     .heading h6 {
         font-size: 1rem;
     }
+}
+
+.testimonial__thumbnail img {
+ 
 }
