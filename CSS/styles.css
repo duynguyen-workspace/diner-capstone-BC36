@@ -35,6 +35,7 @@ html {
 
 .testimonial .carousel-indicators {
   bottom: -50px;
+  gap: 10px;
 }
 
 .testimonial .carousel-indicators li {
@@ -48,12 +49,12 @@ html {
   display: block;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
   margin: 0 auto 15px;
 }
 
 .testimonial__thumbnail img {
   width: 100%;
+  border-radius: 50%;
 }
 
 .testimonial__item blockquote q::before {
@@ -72,11 +73,15 @@ html {
   letter-spacing: 1.25px;
 }
 
-.testimonial__item p {
+.testimonial__body p {
   max-width: 700px;
   margin: 0 auto;
   font-size: 1.125rem;
   padding-bottom: 15px;
+}
+
+.testimonial__footer {
+  margin: 15px 0 20px;
 }
 
 .testimonial__footer h3 {
@@ -89,6 +94,16 @@ html {
 
 .testimonial__footer span {
   font-size: 1.125rem;
+}
+
+/* DARK MODE */
+
+.dark .testimonial__item blockquote q, .dark .testimonial__footer h3 {
+  color: #eee;
+}
+
+.dark .testimonial__body p {
+  color: #c2d0da;
 }
 
 /* MEDIA QUERIES */
@@ -112,5 +127,15 @@ html {
 
   .heading h6 {
     font-size: 1rem;
+  }
+
+  .testimonial__body p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .testimonial__item blockquote q {
+    font-size: 1.3rem;
   }
 }
