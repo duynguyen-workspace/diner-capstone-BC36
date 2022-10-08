@@ -29,7 +29,52 @@ body, html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* TESTIMONIAL */
+.testimonial__thumbnail {
+  margin-bottom: 15px;
+  display: block;
+}
 
+.testimonial__thumbnail img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+} 
+
+.testimonial__item blockquote q::before {
+  font-size: 50px;
+  color: #ff6600;
+  display: block;
+  font-family: inital;
+}
+
+.testimonial__item blockquote q {
+  font-size: 1.5rem;
+  color: #232121;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 1.25px;
+}
+
+.testimonial__item p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  padding-bottom: 15px;
+}
+
+.testimonial__footer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #232121;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.testimonial__footer span {
+  font-size: 1.125rem;
+}
 
 
 
