@@ -38,7 +38,7 @@ html {
   color: white;
   font-weight: 700;
   border-radius: 5px;
-  display: block;
+  display: inline-block;
 }
 
 .orange-btn a {
@@ -749,24 +749,342 @@ button#darkModeToggler {
   font-size: 1.125rem;
 }
 
+/* SECONDARY HEADER */
+
+header.secondary {
+  min-height: 350px;
+  width: 100vw;
+  background-image: linear-gradient(
+      to right,
+      rgb(236 98 6 / 98%),
+      rgb(5 3 0 / 83%)
+    ),
+    url(../img/img10.jpg);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header__navbar {
+  background: transparent;
+  padding: 2rem 0 0 0;
+}
+
+header .header__logo {
+  font-size: 2.1875rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.header__navbar-right {
+  gap: 10px;
+}
+
+.header__search-bar {
+  position: relative;
+  margin-right: 30px; /*temporary*/
+}
+
+.header__search-bar input {
+  border-radius: 5px 0 0 5px;
+  padding: 10px 15px;
+  height: 45px;
+  font-size: 1.125rem;
+  border: none;
+}
+
+.header__search-bar input:focus {
+  border-color: transparent !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.header__search-bar i {
+  border-radius: 0px 5px 5px 0;
+  font-size: 1rem;
+  position: absolute;
+  right: -28px;
+  background-color: white;
+  border-color: transparent;
+  color: gray;
+  padding: 14px 10px;
+  height: 45px;
+  cursor: pointer;
+}
+
+#menu-open {
+  font-size: 35px;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(0.8);
+  background: rgb(6 3 0 / 77%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+
+.overlay-open {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  z-index: 9999;
+}
+
+nav.header__menu ul {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+nav.header__menu ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.25;
+  transition: all .3s;
+}
+
+nav.header__menu ul a:hover {
+    color: #ff6600;
+}
+
+#menu-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: #ff6600;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
+button#darkModeToggler {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+#darkModeToggler .fa-sun {
+  display: none;
+}
+
+#darkModeToggler .fa-moon {
+  display: block;
+}
+
+/* SECONDARY CAROUSEL */
+
+.carouselSec {
+  margin-top: 100px;
+}
+
+.carouselSec ul {
+  font-size: 17px;
+  font-weight: 700;
+  background: none;
+}
+
+.carouselSec .breadcrumb-item:first-of-type a {
+  color: #ff6600;
+}
+
+.carouselSec .breadcrumb-item:first-of-type a:hover {
+  text-decoration: none;
+}
+
+.carouselSec .breadcrumb-item:nth-of-type(2) {
+  color: white;
+}
+
+.carouselSec .breadcrumb-item:nth-of-type(2)::before {
+  content: "";
+}
+
+/* ABOUT US (ab page) */
+
+.aboutAb img {
+  border-radius: 5px;
+}
+
+.aboutAb__Text h3 {
+  color: #232121;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.aboutAb__Text p {
+  font-size: 1.125rem;
+}
+
+.aboutAb__Text .button a {
+  padding: 15px 45px;
+}
+
+.aboutAb__Text p:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+
+.aboutAb__features {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.aboutAb__features h3 {
+  font-size: 2.5rem;
+  color: #232323;
+  font-weight: 600;
+}
+
+.aboutAb__features a {
+  font-size: 1.25rem;
+  color: #ff6600;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.aboutAb__features a:hover {
+  text-decoration: none;
+  color: #ffc600;
+}
+
+.aboutAb__features p {
+  font-size: 1.125rem;
+}
+
+/* SKILLS */
+
+.skills {
+  background-color: #f7f7f7;
+}
+
+.skills__content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 30px;
+}
+
+.skills__photo img {
+  border-radius: 5px;
+}
+
+.skills__stats .heading p {
+  font-size: 1.1rem;
+}
+
+.skills__item {
+  margin-bottom: 25px;
+}
+
+.skills__item h6 {
+  color: #232323;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.skills__stat {
+  background: rgba(22, 28, 45, 0.7);
+  height: 0.35rem;
+}
+
+.skills__stat .progress-bar {
+  background: #ff6600;
+}
+
+/* TEAM */
+figure.team__item img {
+    border-radius: 5px;
+}
+
+.team__item figcaption h3 {
+    font-size: 2rem;
+}
+
+.team__item figcaption a {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    color: #232323;
+    font-weight: 700;
+    display: block;
+    transition: all .3s;
+}
+
+.team__item figcaption:hover a {
+    text-decoration: none !important;
+    color: #f60 !important;
+}
+
+.team__item figcaption span {
+    font-size: 1.125rem;
+    color: rgba(22, 28, 45, 0.7);
+    font-weight: 400;
+}
+
 
 /* DARK MODE */
 .dark {
   background: #232121;
 }
 
+.dark .header__search-bar input,
+.dark .header__search-bar i {
+  background-color: #232121;
+  color: white;
+}
+
+.dark #darkModeToggler .fa-sun {
+  display: block;
+  color: aliceblue;
+}
+
+.dark #darkModeToggler .fa-moon {
+  display: none;
+}
+
 .dark .services__icon i {
   background: #282828;
 }
 
-.dark .heading h2, .dark .services__text h3, .dark .statistics__text h3, .dark .blogPost__item .card-title, .dark .blogPost__item .card-footer .writer a:last-of-type, .dark .blogPost__item .card-footer .blogPost__moreinfo, .dark .testimonial__item blockquote q, .dark .testimonial__footer h3 {
+.dark .aboutAb__Text h3,
+.dark .heading h2, .dark .skills__item h6, .dark .team__item figcaption a, .dark .heading h2, .dark .services__text h3, .dark .statistics__text h3, .dark .blogPost__item .card-title, .dark .blogPost__item .card-footer .writer a:last-of-type, .dark .blogPost__item .card-footer .blogPost__moreinfo, .dark .testimonial__item blockquote q, .dark .testimonial__footer h3 {
   color: #eee;
 }
 
-.dark .services__text p,
+.dark .aboutAb__Text p,
+.dark .aboutAb__features h3,
+.dark .aboutAb__features p, .dark .skills__stats .heading p, .dark .team__item figcaption span, .dark .services__text p,
 .dark .services__item-body p, .dark .statistics__text span, .dark .blogPost__item .card-body p, .dark .testimonial__body p {
   color: #c2d0da;
 }
+
+.dark .skills {
+    background-color: #282828;
+  }
 
 
 .dark .statistics__item {
@@ -792,6 +1110,14 @@ button#darkModeToggler {
   .motto__content h2 {
     font-size: 2.5rem;
   }
+
+  .aboutAb__Text h3 {
+    font-size: 1.875rem;
+  }
+
+  .aboutAb__features h3 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -812,6 +1138,33 @@ button#darkModeToggler {
     /* .statistics {
       margin-top: 0;
   } */
+
+  .aboutAb__features {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .team__item:last-of-type {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 991.5px) {
+  .skills__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills__stats {
+    grid-column: 1 / span 2;
+  }
+
+  .skills__photo img:first-of-type {
+    grid-column: 1 / span 1;
+  }
+
+  .skills__photo img:last-of-type {
+    grid-column: 2 / span 1;
+  }
 }
 
 @media  screen and (max-width: 990px) {
@@ -824,6 +1177,11 @@ button#darkModeToggler {
   .thumbnail {
     min-height: 400px;
   }
+
+  .team__item figcaption a {
+    margin-top: 15px;
+    font-size: 1.125rem;
+}
 }
 
 @media screen and (max-width: 800px) {
@@ -833,6 +1191,15 @@ button#darkModeToggler {
 
   .categories__info p {
     font-size: 1rem;
+  }
+
+  .aboutAb__features {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .aboutAb__features a {
+    margin-top: 30px;
   }
 }
 
@@ -868,6 +1235,10 @@ button#darkModeToggler {
     font-size: 1rem;
   }
 
+  .header__search-bar {
+    display: none;
+  }
+
   .booking__content p {
     font-size: 1rem;
   }
@@ -883,6 +1254,32 @@ button#darkModeToggler {
 
   .testimonial__body p {
     font-size: 1rem;
+  }
+
+  .aboutAb__Text h3 {
+    font-size: 1.75rem;
+  }
+
+  .aboutAb__Text p {
+    font-size: 1rem;
+  }
+
+  .aboutAb__features p {
+    font-size: 1rem;
+  }
+
+  .skills__stats .heading p {
+    font-size: 1rem;
+  }
+
+  .team__item figcaption span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .aboutAb__features a {
+    margin-top: 15px;
   }
 }
 
@@ -909,9 +1306,24 @@ button#darkModeToggler {
 }
 
 @media screen and (max-width: 480px) {
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+
   .statistics__text span {
       font-size: 0.9rem;
   }
+
+  .aboutAb__Text h3 {
+    font-size: 1.5rem;
+  }
+
+  .aboutAb__Text .button a {
+    padding: 15px;
+  }
+
+  .aboutAb__features h3 {
+    font-size: 1.75rem;
 }
 
 @media screen and (max-width: 415px) {
@@ -936,6 +1348,7 @@ button#darkModeToggler {
     max-width: 1200px;
   }
 }
+}
 
 /* ANIMATION */
 
@@ -948,6 +1361,8 @@ button#darkModeToggler {
     box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }
+
+
 
 
 
