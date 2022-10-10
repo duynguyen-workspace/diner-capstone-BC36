@@ -39,6 +39,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="./CSS/magnific-popup.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
@@ -328,7 +331,6 @@
     </section>
 
     <!-- STATISTICS -->
-
     <section class="statistics">
       <div class="container">
         <div class="statistics__content">
@@ -382,6 +384,24 @@
       </div>
     </section>
 
+    <!-- VIDEO -->
+    <section class="video py-5">
+      <div class="container">
+        <div class="thumbnail">
+          <a href="#open-video" class="open-popup-link">
+            <i class="fa fa-play"></i>
+          </a>
+        </div>
+
+        <div id="open-video" class="video__popupVideo white-popup mfp-hide">
+          <iframe
+            src="https://player.vimeo.com/video/305185528"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- BS4 JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -393,5 +413,23 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JQUERY -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- MAGNIFIC JS -->
+    <script src="./JS/jquery.magnific-popup.min.js"></script>
+    <script>
+      $(".open-popup-link").magnificPopup({
+        type: "inline",
+        midClick: true,
+        fixedContentPos: false,
+      });
+    </script>
   </body>
 </html>
