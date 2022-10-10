@@ -53,13 +53,13 @@ html {
   opacity: 0.8;
 }
 
-
 /* HEADER */
 
 header {
   min-height: 700px;
   width: 100vw;
-  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../img/img02.jpg);
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(../img/img02.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -125,7 +125,7 @@ header .header__logo {
   transform: scale(0.8);
   background: rgb(6 3 0 / 77%);
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   visibility: hidden;
 }
 
@@ -133,7 +133,6 @@ header .header__logo {
   opacity: 1;
   transform: scale(1);
   visibility: visible;
-
 }
 
 nav.header__menu ul {
@@ -175,7 +174,7 @@ button#darkModeToggler {
   border: none;
 }
 
-#darkModeToggler .fa-sun{
+#darkModeToggler .fa-sun {
   display: none;
 }
 
@@ -208,13 +207,13 @@ button#darkModeToggler {
   border: 2px solid white;
   padding: 15px 40px;
   border-radius: 5px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .carousel__button:hover {
   text-decoration: none;
   background-color: white;
-  color:#ff6600;
+  color: #ff6600;
 }
 /* ABOUT US */
 
@@ -466,14 +465,13 @@ button#darkModeToggler {
   padding: 40px 0;
   border-radius: 5px;
   transform: translateY(10px);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .statistics__item:hover {
   box-shadow: 0px 2px 4px rgb(46 41 51 / 8%), 0px 5px 10px rgb(71 63 79 / 16%);
   transform: translateY(0);
 }
-
 
 .statistics__icon i {
   font-size: 25px;
@@ -491,7 +489,7 @@ button#darkModeToggler {
 .statistics__text h3 {
   font-size: 2.5rem;
   color: #000;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .statistics__text span {
@@ -509,7 +507,7 @@ button#darkModeToggler {
 }
 
 .thumbnail::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -528,10 +526,10 @@ button#darkModeToggler {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: ripple 1s linear infinite;;
+  animation: ripple 1s linear infinite;
   z-index: 2;
   text-align: center;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .video .open-popup-link:hover {
@@ -544,7 +542,7 @@ button#darkModeToggler {
   color: #ff6600;
   line-height: 80px;
   font-size: 1.5rem;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .video .open-popup-link:hover i {
@@ -554,9 +552,9 @@ button#darkModeToggler {
 }
 
 .white-popup {
-    max-width: 750px;
-    margin: 40px auto;
-    position: relative;
+  max-width: 750px;
+  margin: 40px auto;
+  position: relative;
 }
 
 .white-popup iframe {
@@ -584,7 +582,7 @@ button#darkModeToggler {
 .blogPost__item .card-header {
   padding: 0;
   position: relative;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
 
 .blogPost__item .card-header img {
@@ -637,7 +635,7 @@ button#darkModeToggler {
   color: #232121;
   margin-bottom: 10px;
   display: block;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .blogPost__item .card-footer {
@@ -673,7 +671,7 @@ button#darkModeToggler {
   border: none;
   color: #232121;
   text-decoration: none;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .blogPost__item .card-footer .blogPost__moreinfo:hover {
@@ -855,11 +853,11 @@ nav.header__menu ul a {
   font-size: 20px;
   font-weight: 600;
   line-height: 2.25;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 nav.header__menu ul a:hover {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 #menu-close {
@@ -1018,33 +1016,32 @@ button#darkModeToggler {
 
 /* TEAM */
 figure.team__item img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .team__item figcaption h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .team__item figcaption a {
-    margin-top: 30px;
-    font-size: 1.6rem;
-    color: #232323;
-    font-weight: 700;
-    display: block;
-    transition: all .3s;
+  margin-top: 30px;
+  font-size: 1.6rem;
+  color: #232323;
+  font-weight: 700;
+  display: block;
+  transition: all 0.3s;
 }
 
 .team__item figcaption:hover a {
-    text-decoration: none !important;
-    color: #f60 !important;
+  text-decoration: none !important;
+  color: #f60 !important;
 }
 
 .team__item figcaption span {
-    font-size: 1.125rem;
-    color: rgba(22, 28, 45, 0.7);
-    font-weight: 400;
+  font-size: 1.125rem;
+  color: rgba(22, 28, 45, 0.7);
+  font-weight: 400;
 }
-
 
 /* DARK MODE */
 .dark {
@@ -1070,32 +1067,55 @@ figure.team__item img {
   background: #282828;
 }
 
+.dark .aboutUs .heading h2,
 .dark .aboutAb__Text h3,
-.dark .heading h2, .dark .skills__item h6, .dark .team__item figcaption a, .dark .heading h2, .dark .services__text h3, .dark .statistics__text h3, .dark .blogPost__item .card-title, .dark .blogPost__item .card-footer .writer a:last-of-type, .dark .blogPost__item .card-footer .blogPost__moreinfo, .dark .testimonial__item blockquote q, .dark .testimonial__footer h3 {
+.dark .heading h2,
+.dark .skills__item h6,
+.dark .team__item figcaption a,
+.dark .heading h2,
+.dark .services__text h3,
+.dark .statistics__text h3,
+.dark .blogPost__item .card-title,
+.dark .blogPost__item .card-footer .writer a:last-of-type,
+.dark .blogPost__item .card-footer .blogPost__moreinfo,
+.dark .testimonial__item blockquote q,
+.dark .testimonial__footer h3 {
   color: #eee;
 }
 
-.dark .aboutUs__content p, .dark .aboutAb__Text p,
+.dark .aboutUs__content p,
+.dark .aboutAb__Text p,
 .dark .aboutAb__features h3,
-.dark .aboutAb__features p, .dark .skills__stats .heading p, .dark .team__item figcaption span, .dark .services__text p,
-.dark .services__item-body p, .dark .statistics__text span, .dark .blogPost__item .card-body p, .dark .testimonial__body p {
+.dark .aboutAb__features p,
+.dark .skills__stats .heading p,
+.dark .team__item figcaption span,
+.dark .services__text p,
+.dark .services__item-body p,
+.dark .statistics__text span,
+.dark .blogPost__item .card-body p,
+.dark .testimonial__body p {
   color: #c2d0da;
 }
 
 .dark .skills {
-    background-color: #282828;
-  }
-
+  background-color: #282828;
+}
 
 .dark .statistics__item {
   background-color: #232220;
 }
 
-.dark .blogPost{
+.dark .blogPost {
   background-color: #232121;
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 1190px) {
+  .carousel__content h1 {
+    font-size: 2.8125rem;
+  }
+}
 
 @media screen and (max-width: 1080px) {
   .heading h2 {
@@ -1135,7 +1155,7 @@ figure.team__item img {
     margin-right: 0;
   }
 
-    /* .statistics {
+  /* .statistics {
       margin-top: 0;
   } */
 
@@ -1167,13 +1187,13 @@ figure.team__item img {
   }
 }
 
-@media  screen and (max-width: 990px) {
+@media screen and (max-width: 990px) {
   .blogPost__item .card-title {
     font-size: 1.25rem;
   }
 }
 
-@media  screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .thumbnail {
     min-height: 400px;
   }
@@ -1181,10 +1201,15 @@ figure.team__item img {
   .team__item figcaption a {
     margin-top: 15px;
     font-size: 1.125rem;
-}
+  }
 }
 
 @media screen and (max-width: 800px) {
+  header {
+    min-height: 600px;
+    margin-top: 40px;
+  }
+
   .categories__info a {
     font-size: 1.125rem;
   }
@@ -1203,6 +1228,12 @@ figure.team__item img {
   }
 }
 
+@media screen and (max-width: 766px) {
+  nav.header__menu ul a {
+    font-size: 1rem;
+  }
+}
+
 /* @media screen and (max-width: 767px) {
   .blogPost .blogPost__item:not(:nth-of-type(3)) {
     margin-bottom: 50px;
@@ -1217,7 +1248,7 @@ figure.team__item img {
 
 @media screen and (max-width: 640px) {
   .statistics__text h3 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .thumbnail {
@@ -1275,6 +1306,10 @@ figure.team__item img {
   .team__item figcaption span {
     font-size: 1rem;
   }
+
+  nav.header__menu ul a {
+    line-height: 2;
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -1311,7 +1346,7 @@ figure.team__item img {
   }
 
   .statistics__text span {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 
   .aboutAb__Text h3 {
@@ -1324,6 +1359,38 @@ figure.team__item img {
 
   .aboutAb__features h3 {
     font-size: 1.75rem;
+  }
+
+  header {
+    min-height: 450px;
+  }
+  .carousel__content {
+    max-width: 500px;
+    margin-top: 50px;
+  }
+  .carousel__content h1 {
+    font-size: 1.75rem;
+  }
+  .carousel__button {
+    padding: 15px 20px;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .carousel__content {
+    max-width: 500px;
+    margin-top: 50px;
+  }
+
+  .carousel__content h1 {
+    font-size: 1.75rem;
+  }
+
+  .carousel__button {
+    padding: 15px 20px;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -1348,35 +1415,17 @@ figure.team__item img {
     max-width: 1200px;
   }
 }
-}
 
 /* ANIMATION */
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
+      0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
   }
 
   100% {
-    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
+      0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
