@@ -32,6 +32,7 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body id="myHTML">
@@ -671,6 +672,82 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer class="footer pt-5 bg-dark text-white-50">
+        <div class="container py-lg-4 footer__detail">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-7 pr-lg-5 mb-3">
+                    <h2><a class="footer__logo font-weight-bold" href="index.html">Diner</a></h2>
+                    <p>
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+                        amet Semper at elit.
+                    </p>
+                    <div class="footer__brand mt-4">
+                        <a href="#facebook" class="text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#twitter" class="text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#instagram" class="text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#linkedin" class="text-decoration-none"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-sm-0 mt-5">
+                    <h5 class="text-white font-weight-bold">Usefull Links</h5>
+                    <ul class="mt-4">
+                        <li><a href="about.html" class="text-decoration-none text-white-50">About Us</a></li>
+                        <li><a href="services.html" class="text-decoration-none text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-decoration-none text-white-50"> Blog posts</a></li>
+                        <li><a href="#careers" class="text-decoration-none text-white-50"> Careers</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-white-50">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-5 col-6 mt-lg-0 mt-5">
+                    <h5 class="text-white font-weight-bold">More Info</h5>
+                    <ul class="mt-4">
+                        <li><a href="#history" class="text-decoration-none text-white-50">History</a></li>
+                        <li><a href="#vision" class="text-decoration-none text-white-50">Vision &amp; Values</a></li>
+                        <li><a href="#award" class="text-decoration-none text-white-50">Awards</a></li>
+                        <li><a href="#media" class="text-decoration-none text-white-50"> Media</a></li>
+                        <li><a href="#support" class="text-decoration-none text-white-50"> Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7 mt-lg-0 mt-5">
+                    <h5 class="text-white font-weight-bold">Subscribe to our Newsletter</h5>
+                    <p class="mt-4">
+                        Enter your email and receive the latest news, updates and special
+                        offers from us.
+                    </p>
+                    <form action="#" method="GET">
+                        <input class="form__input" type="email" name="email" placeholder="Your Email Address" required="" />
+                        <button class="btn btn-primary footer__btn w-100 mt-3">
+                            Subscibe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="row">
+                    <p class="col-lg-8 text-white">
+                        © 2021 Diner. All rights reserved. Design by
+                        <a href="https://w3layouts.com/" target="_blank" class="text-primary"> W3Layouts</a>
+                    </p>
+
+                    <div class="col-lg-4">
+                        <ul class="d-flex text-lg-right">
+                            <li><a href="#careers" class="text-white"> Careers</a></li>
+                            <li class="mx-lg-5 mx-md-4 mx-3">
+                                <a href="#" class="text-white">Privacy Policy</a>
+                            </li>
+                            <li><a href="contact.html" class="text-white">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -693,6 +770,12 @@
             fixedContentPos: false,
         });
     </script>
+
+    <!-- BUTTON-TOGGLE JS -->
+    <script src="./JS/button-toggler.js"></script>
+    <!-- COUNTUP JS -->
+    <script src="./JS/jquery.countup.min.js">   </script>
+    <script> $('.counter').countUp();</script>
 </body>
 
 </html>
