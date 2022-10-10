@@ -1075,7 +1075,7 @@ figure.team__item img {
   color: #eee;
 }
 
-.dark .aboutAb__Text p,
+.dark .aboutUs__content p, .dark .aboutAb__Text p,
 .dark .aboutAb__features h3,
 .dark .aboutAb__features p, .dark .skills__stats .heading p, .dark .team__item figcaption span, .dark .services__text p,
 .dark .services__item-body p, .dark .statistics__text span, .dark .blogPost__item .card-body p, .dark .testimonial__body p {
