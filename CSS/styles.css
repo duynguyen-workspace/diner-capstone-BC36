@@ -191,7 +191,7 @@ button#darkModeToggler {
     text-decoration: none;
     background-color: white;
     color:#ff6600;
-
+}
 /* ABOUT US */
 
 .aboutUs__content p {
@@ -201,6 +201,9 @@ button#darkModeToggler {
 /* DARK MODE */
 
 .dark {
+    background:#232121;
+    color: #eee;
+}
 
 .dark .header__search-bar input, .dark .header__search-bar i {
     background-color: #232121;
@@ -210,18 +213,11 @@ button#darkModeToggler {
 .dark #darkModeToggler .fa-sun {
     display: block;
     color: aliceblue;
-  }
-  
-  .dark #darkModeToggler .fa-moon {
-    display: none;
-  }
-
-
-
-    background:#232121;
-
-    color: #eee;
 }
+.dark #darkModeToggler .fa-moon {
+    display: none;
+}
+
 
 .dark .aboutUs__content p {
     color: #c2d0da;
@@ -235,8 +231,6 @@ button#darkModeToggler {
         font-size: 2.8125rem;
     }
 }
-=======
->>>>>>> aboutUs
 
 @media screen and (max-width: 1080px) {
     .heading h2 {
