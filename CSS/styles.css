@@ -515,6 +515,72 @@ html {
   box-shadow: none;
 }
 
+/* TESTIMONIAL */
+
+.testimonial .carousel-indicators {
+  bottom: -50px;
+  gap: 10px;
+}
+
+.testimonial .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: #ff6600;
+  border-radius: 50%;
+}
+
+.testimonial__thumbnail {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+}
+
+.testimonial__thumbnail img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.testimonial__item blockquote q::before {
+  font-size: 50px;
+  color: #ff6600;
+  display: block;
+  font-family: inital;
+}
+
+.testimonial__item blockquote q {
+  font-size: 1.5rem;
+  color: #232121;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 1.25px;
+}
+
+.testimonial__body p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  padding-bottom: 15px;
+}
+
+.testimonial__footer {
+  margin: 15px 0 20px;
+}
+
+.testimonial__footer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #232121;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.testimonial__footer span {
+  font-size: 1.125rem;
+}
+
+
 /* DARK MODE */
 .dark {
   background: #232121;
@@ -524,12 +590,12 @@ html {
   background: #282828;
 }
 
-.dark .heading h2, .dark .services__text h3, .dark .statistics__text h3, .dark .blogPost__item .card-title, .dark .blogPost__item .card-footer .writer a:last-of-type, .dark .blogPost__item .card-footer .blogPost__moreinfo {
+.dark .heading h2, .dark .services__text h3, .dark .statistics__text h3, .dark .blogPost__item .card-title, .dark .blogPost__item .card-footer .writer a:last-of-type, .dark .blogPost__item .card-footer .blogPost__moreinfo, .dark .testimonial__item blockquote q, .dark .testimonial__footer h3 {
   color: #eee;
 }
 
 .dark .services__text p,
-.dark .services__item-body p, .dark .statistics__text span, .dark .blogPost__item .card-body p {
+.dark .services__item-body p, .dark .statistics__text span, .dark .blogPost__item .card-body p, .dark .testimonial__body p {
   color: #c2d0da;
 }
 
@@ -645,6 +711,10 @@ html {
   .blogPost__item .card-body p {
     font-size: 1rem;
   }
+
+  .testimonial__body p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -660,6 +730,12 @@ html {
 
   .motto__content h2 {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .testimonial__item blockquote q {
+    font-size: 1.3rem;
   }
 }
 
@@ -704,10 +780,6 @@ html {
   }
 }
 
-
-
-
-/* DARK MODE */
 
 
 
